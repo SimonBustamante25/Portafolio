@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #142538;
+    color: #DFD0B8;
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin: 3% 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    color: #427D9D;
+    font-size: 1.7rem;
+}
+
+.pipe {
+    color: white;
+    font-weight: bold;
+}
+
+.links {
+    display: block;
+    margin: 1% 0;
+    color: aliceblue;
+    background-color: #164863;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    background-color: #acacac;
+}
+
+header .logo {
+    color: #164863;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav span {
+    margin: 0 10px;
+    color: #141e29;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 19, 36);
+}
+
+header a:hover {
+    color: #C69774;
+}
+
+#Quien_soy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#Quien_soy .img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #C69774;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.imagen_simon {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#Quien_soy .container-presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#cv  {
+    background-color: #142538;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#cv .card {
+    background-color: #141e29;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.card .circle {
+    background-color: #363636;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.card .content p {
+    text-align: left;
+}
+
+.imagen-opaca:hover {
+    opacity: 0.5;
+}
+
+.titulo-cv {
+    text-align: center;
+}
+
+.titulo-proyectos {
+    text-align: center;
+}
+
+#Proyectos .container {
+    background-color: #142538;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#Proyectos .card {
+    background-color: #141e29;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+
+}
+
+
+
+#contacto {
+    background-color: #acacac;
+    padding: 25px 30px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#contacto .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto .container a {
+    margin: 5px 0;
+    flex-shrink: 0;
+}
+
+#contacto .container a:hover {
+    opacity: 0.5;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .header .container,
+    #Quien_soy .container-presentacion {
+        padding: 1rem;
+    }
+
+    nav a,
+    nav span {
+        margin: 0 5px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .links {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+    }
+}
+
